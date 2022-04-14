@@ -359,6 +359,13 @@
         font-size: 65%;
     }
 
+    .servicios table {
+        display: flex;
+        justify-content: center;
+    }
+    
+
+
     .ubicacion {
         
         font-size: 110%;
