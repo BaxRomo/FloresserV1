@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Raleway';
+    text-decoration: none;
+}
+
+ /*-- Inicia Header Cover Footer --*/ 
+ .encabezado {
+    grid-area: header;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 210%;
+    margin: 15px 20px 0px 15px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.nav {
+    li {
+        display: inline-block;
+        color: #3CC8C6;
+        margin-bottom: 5px;
+        font-size: 85%;
+            &:hover {
+                font-weight: 500;
+            }
+    }
+}
+
+.navegacion {
+    cursor: default;
+    margin-right: 50px ;
+}
+
+.portada {
+    grid-area: portada;
+    background-color: white;
+    img {
+        width: 100%;
+    }
+}
+
+.optCover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top: -6%;
+    margin-bottom: -2%;
+
+    li {
+        background-color: #3CC8C6;
+        text-align: center;
+        width: 350px;
+        display: inline-block;
+        padding: 1.5%;
+        a {
+            font-size: 150%;
+            color: white;
+            &:hover{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.pie {
+    grid-area: footer;
+    background-color: #3CC8C6;
+    grid-area: footer;
+    padding: 25px;
+    text-align: center;
+
+    h3 {
+        text-align: center;
+        color: white;
+    }
+}
+
+/*-- Termina Header Cover Footer --*/ 
+
+/*-- Inicia Contenido INDEX --*/ 
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
+    grid-template-areas: "header header header"
+                          "portada portada portada"
+                          "main main misc"
+                          "footer footer footer";
+}
+
+.indxEquipo {
+    background-color:white;
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    h2 {
+        width: 100%;
+        font-size: 245%;
+        padding-left: 100px;
+    }
+
+    img {
+        width: 30%;
+        padding: 10px;
+        opacity: 85%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+.indxEspc {
+    background-color: white;
+    grid-area: misc;
+    margin-bottom: 45px;
+
+    h2 {
+        margin-top: 50px;
+        width: 100%;
+        font-size: 220%;
+    }
+
+    li {
+        padding-left: 75px;
+        width: 65%;
+        font-size: 130%;
+        color: #3CC8C6;
+        padding: 25px;
+        border-bottom: 2px solid #3CC8C6; 
+        display: list-item;
+        list-style-position: inside;
+    }
+}
+/*-- Termina Contenido INDEX --*/ 
+
+/*-- Inicia NOSOTROS --*/ 
+.nosotros {
+    margin: 3% 10%;
+    grid-column: span 3;
+    text-align: left;
+
+    h2 {
+        font-size: 220%;
+    }
+
+    p{
+        font: 150%;
+    }
+
+    img {
+        display: flex;
+        align-self: center;
+        width: 20%;
+    }
+}
+
+.mision {
+    display: flex;
+    flex-direction: row;
+
+    img { 
+        margin-right: 25px;
+        margin-bottom: 35px;
+    }
+}
+
+.vision {
+    display: flex;
+    margin: 25px 0px;
+
+    img { 
+        margin-left: 25px;
+        margin-bottom: 35px;
+    }
+}
+
+.valores {
+    display: flex;
+    img { 
+        margin-right: 25px;
+        margin-bottom: 35px;
+    }
+}
+/*-- Termina NOSOTROS --*/ 
+
+/*-- Inicia SERVICIOS --*/
+.servicios {
+    grid-column: span 3;
+    margin: 10px 85px;
+    margin-bottom: 35px;
+}
+
+.especialidades {
+    table {
+        width: 100%;
+        margin: 10px 0px;
+
+        td {
+            padding: 10px;
+            background-color: #3CC8C6;
+            opacity: 65%;
+            font-size: 180%;
+            text-align: center;
+            color: white;
+            border-radius: .3rem;
+            &:hover{
+                opacity: 100%;
+            }
+        }
+    }
+}
+/*-- Termina SERVICIOS --*/
+
+/*-- Inicia CITAS --*/
+.doctoralia {
+    grid-column: span 3;
+    margin: 20px auto;
+}/*-- Termina CITAS --*/
+
+
+/*-- Inicia CONTACTO --*/
+.mapa{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+}
+
+.ubicacion {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    h2 {
+        margin-bottom: 10px;
+        font-size: 200%;
+    }
+
+    li {
+        background-color: white;
+        width: 90%;
+        font-size: 120%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+.formulario {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: #3CC8C6;
+    padding: 25px;
+    width: 90%;
+    
+    h2 {
+        padding-bottom: 15px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.controlFormulario {
+    margin: 5px;
+    height: 35px;
+    padding: 15px;
+}
+
+.mensaje {
+    margin: 5px;
+    height: 250px;
+    padding: 15px;
+    resize: none;
+}
+
+.controlBoton {
+    width: 216px;
+    padding: 7px;
+    margin: 5px;
+
+}
+
+.contacto {
+    grid-area: misc;
+}
+/*-- Termina CONTACTO --*/
+
+/*-- Inicia Media Query --*/
+@media screen and (max-width: 768px) {
+
+    .contenedor {
+        grid-template-areas: "header header header"
+                             "portada portada portada"
+                             "main main main"
+                             "misc misc misc"
+                             "footer footer footer";
+
+    font-size: 65%;
+    text-align: center;
+    }
+
+    .encabezado {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navegacion {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .indxEquipo h2 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .indxEspc {
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            text-align: center;
+            margin: auto
+        }
+    }
+
+    .servicios {
+        font-size: 65%;
+
+        table {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .ubicacion {
+        font-size: 110%;
+        li {
+            text-align: center;
+        }
+    
+    }
+
+    .contacto {
+        display: flex;
+        justify-content: center;
+    }
+}
+/*-- Termina Media Query --*/
