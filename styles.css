@@ -16,14 +16,13 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
     font-size: 210%;
     margin: 15px 20px 0px 15px;
     
 }
 
 .logo {
-    width: 65%;
+    width: 55%;
 }
 
 
